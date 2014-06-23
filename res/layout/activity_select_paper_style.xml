@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_style_back"
+    android:orientation="vertical"
+    >
+     <GridView
+        android:id="@+id/styleGrid"
+        android:layout_marginTop="112dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="30dp"
+        android:horizontalSpacing="30dp"
+       	android:gravity="center"
+       	/> 
+    
+
+
+</LinearLayout>

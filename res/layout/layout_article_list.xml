@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/article_title"
+    android:layout_width="match_parent"
+	android:layout_height="27.35dp"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:textColor="#5F2400"
+    android:textStyle="bold"
+    android:paddingLeft="7dp"
+    android:textSize="14sp" />
+    <!--  android:layout_height="27.35dp"-->

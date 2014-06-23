@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/other_article_frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/other_article"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wood_back" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:paddingTop="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wood_back"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/recommend_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/recommend_btn_selector"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/recommend_count"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/recommend_btn"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#ff0000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/delete_article_btn"
+                        android:layout_width="64dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/delete_article_btn_selector"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp" >
+
+                        <EditText
+                            android:id="@+id/write_comment"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:maxLength="23"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/write_comment_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/write_comment_selector" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/comment_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="399dp"
+                        android:choiceMode="singleChoice"
+                        android:divider="#ffffff"
+                        android:dividerHeight="0px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center" >
+
+                        <Button
+                            android:id="@+id/previous_page"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/previous_page_btn_selector"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/page_btn1"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/selected_page"
+                            android:text="1"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/page_btn2"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="2"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/page_btn3"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="3"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/page_btn4"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="4"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/page_btn5"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="5"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/page_btn6"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="6"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/page_btn7"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="7"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/page_btn8"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="8"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/page_btn9"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@android:color/transparent"
+                            android:text="9"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/next_page"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/next_page_btn_selector"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

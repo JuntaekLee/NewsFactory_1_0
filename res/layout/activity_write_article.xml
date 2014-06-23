@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/wrtie_article_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/article_gray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp" >
+
+            <TextView
+                android:id="@+id/today_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="22dp"
+                android:textColor="#000000"
+                android:textSize="8sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/write_article_drawer"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:topOffset="530dp" 
+        android:handle="@+id/drawer_handle"
+        android:layout_gravity="center_horizontal"
+        android:content="@+id/drawer_content">
+
+        <ImageView
+            android:id="@+id/drawer_handle"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/handle_up"
+             />
+        <LinearLayout 
+            android:id="@+id/drawer_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <Button 
+                android:id="@+id/write_article_exit_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+               android:background="@drawable/write_article_exit_btn_selector"
+                />
+             <Button 
+                 android:layout_marginLeft="10dp"
+                 android:id="@+id/save_article_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+             android:background="@drawable/save_article_btn_selector"
+                />
+        </LinearLayout>
+    </SlidingDrawer>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_back"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/facebook_upload_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="460dp" >
+
+        <ImageView
+            android:id="@+id/upload_facebook_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_image" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/upload_facebook_text"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_margin="3dp"
+                android:layout_weight="8"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/upload_facebook"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:background="@drawable/write_comment_selector" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
